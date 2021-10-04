@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=,initial-scale" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"/>
+        <link href="./app.css" rel="stylesheet" />
+        <title>Javascript basic clock</title>
+    </head>
+    <body>
+        <div id="clock"></div>
+        <script src="./app.js"></script>
+    </body>
+</html>
+<!-- We just need a single line of HTML to display the clocks container to the DOM
+    The id being passed to the div also allows for the CSS to manipulate that specfic part of the DOM
+    To run simply add the src script location to the HTML head, since its local its just the local file path
+    The script is loaded in after the div because, the DOM is created and then we execute the script
+    if the Script comes before the container it will return NULL because it is trying to execute something that
+    at the current moment doesn't exist. 
+-->
