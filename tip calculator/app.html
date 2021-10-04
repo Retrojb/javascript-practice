@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=,initial-scale" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"/>
+        <link href="./app.css" rel="stylesheet" />
+        
+        <title>Javascript Tip Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tip Calculator</h1>
+            <form id="tip-form">
+                <h4>Bill Total</h4>
+                <input type="number" id="amount" placeholder="Bill total" />
+
+                <h4>Rate your service</h4>
+                    <select id="services">
+                        <option selected disabled hidden> Select</option>
+                        <option value="0.25">25%</option>
+                        <option value="0.20">20%</option>
+                        <option value="0.18">18%</option>
+                        <option value="0.15">15%</option>
+                        <option value="0.10">10%</option>
+                        <option value="0">0%</option>
+                    </select>
+                
+                <h4>How many people are we dividing among</h4>
+                    <input type="text" id="persons" placeholder="How many people" />
+                    <button id="calculate">Calculate</button>
+            </form>
+            <div class="tip">
+                <span id="total">0</span>
+                <span id="each">each</span>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
